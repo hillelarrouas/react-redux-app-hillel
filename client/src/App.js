@@ -24,7 +24,7 @@ export default function App() {
     <Router>
       <div className='cardApp'>
           <ul className='ulLinks'>
-              <Link to="/"><li>Home</li></Link>
+              <Link to="/"><li>בית</li></Link>
               <Link to="/getUsers"><li>משתמשים</li></Link>
               <Link to="/addUsers"><li>הוספת משתמשים</li></Link>
               <Link to="/cardSearchCar"><li>חיפוש רכב</li></Link>

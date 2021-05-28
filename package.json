@@ -1,17 +1,22 @@
 {
-  "name": "my",
+  "name": "react-redux-app-hillel",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "cd server && npm start",
+    "build":"cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hillelarrouas/react-redux-app-hillel.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  }
+  "bugs": {
+    "url": "https://github.com/hillelarrouas/react-redux-app-hillel/issues"
+  },
+  "homepage": "https://github.com/hillelarrouas/react-redux-app-hillel#readme"
 }
