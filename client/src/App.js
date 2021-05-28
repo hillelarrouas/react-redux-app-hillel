@@ -23,12 +23,12 @@ export default function App() {
   return (
     <Router>
       <div className='cardApp'>
-          <ul className='ulLinks'>
-              <Link to="/"><li>בית</li></Link>
-              <Link to="/getUsers"><li>משתמשים</li></Link>
-              <Link to="/addUsers"><li>הוספת משתמשים</li></Link>
-              <Link to="/cardSearchCar"><li>חיפוש רכב</li></Link>
-          </ul>
+        <ul className='ulLinks'>
+          <Link to="/"><li>בית</li></Link>
+          <Link to="/getUsers"><li>משתמשים</li></Link>
+          <Link to="/addUsers"><li>הוספת משתמשים</li></Link>
+          <Link to="/cardSearchCar"><li>חיפוש רכב</li></Link>
+        </ul>
         <Switch>
           <Route path="/getUsers">
             <GetUsers />
@@ -63,32 +63,26 @@ export default function App() {
   );
 }
 
-// let counter = 10
+
 function Home() {
-  // // const todo = useSelector(state => state.todoReducer.todo)
-  // const dispatch = useDispatch()
 
-  // function add() {
-  //   dispatch(addTodo(counter = counter + 10))
-  // }
-
-  // function deleteuserid(id) {
-  //   dispatch(deleteUser(id))
-  // }
-
-
+  fetch('/get_joke')
+    .then(r => r.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(e=>{
+      console.log(e)
+    })
 
   return (
     <div>
-      {/* <button onClick={add}>אישור</button>
-      <h1>{todo.map(elm => {
-        return (<div key={elm.id} onClick={() => deleteuserid(elm.id)}>{elm.id}</div>)
-      })}</h1> */}
+      <h1>Home</h1>
     </div>);
 }
 
 
-function Button({typeButton , actionBt}){
+function Button({ typeButton, actionBt }) {
   return (
 
     <Link to={actionBt}><button>{typeButton}</button></Link>
