@@ -1,0 +1,36 @@
+.cardApp{
+ max-width: 600px;
+ width: 100%;
+margin: auto;
+/* background-color: white; */
+padding: 5px;
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+.ulLinks{
+  display: flex;
+  background-color: rgb(241 237 232 / 60%);
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;  
+}
+
+li{
+  padding: 10px;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 3px solid rgba(64, 224, 208, 0);
+  transition: all 0.2s;
+}
+li:hover{
+  border-bottom: 3px solid rgba(1, 136, 122, 0.829);
+}
+
+a{
+  color: #000000c4;
+  text-decoration: none;
+
+}  

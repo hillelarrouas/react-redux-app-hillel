@@ -1,0 +1,35 @@
+.formAddUser{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;    
+}
+.inputTextAddUser{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(1, 136, 122, 0.829);
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+.inputTypeSubmitAddUser{
+    padding: 4px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(1, 136, 122, 0.829);
+    margin: 5px 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.inputTypeSubmitAddUser:hover{
+    background:  rgba(1, 136, 122, 0.829);
+    color: white;
+}
