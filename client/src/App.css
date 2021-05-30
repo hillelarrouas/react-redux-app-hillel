@@ -1,36 +1,23 @@
-.cardApp{
- max-width: 600px;
- width: 100%;
-margin: auto;
-/* background-color: white; */
-padding: 5px;
-border-radius: 10px;
-box-sizing: border-box;
-}
-
-.ulLinks{
+.App{
   display: flex;
-  background-color: rgb(241 237 232 / 60%);
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  border-radius: 10px;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-li{
-  padding: 10px;
-  list-style-type: none;
-  font-weight: 500;
-  font-size: 18px;
-  border-bottom: 3px solid rgba(64, 224, 208, 0);
-  transition: all 0.2s;
-}
-li:hover{
-  border-bottom: 3px solid rgba(1, 136, 122, 0.829);
+.getQuestion{
+  background: linear-gradient(270deg, #23a5d5c9, #757e7cab);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom:10px;
+  border:1px solid rgba(0, 0, 255, 0.219);
+  outline: none;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-a{
-  color: #000000c4;
-  text-decoration: none;
-
-}  
+.getQuestion:hover{
+  box-shadow: 0 0 11px 2px rgb(0 0 0 / 20%);
+}

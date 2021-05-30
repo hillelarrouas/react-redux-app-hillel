@@ -5,11 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 5px;
-  background-color: rgb(241 237 232 / 60%);
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   direction: rtl;
-  font-family: 'Assistant', sans-serif;
+  background: linear-gradient(270deg, #ee765249, #23a5d544, #23d5ab3b);
+  
 }
 
 code {
@@ -18,23 +16,28 @@ code {
 }
 
 
-::-webkit-scrollbar {
-  width: 10px;
+*{
+  box-sizing: border-box;
 }
 
-/* Track */
+
+@media only screen and (max-width:900px) {}
+
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px white;
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(197 197 197); 
   border-radius: 5px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(197 197 197);
-  border-radius: 6px;
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197 197 197); 
 }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-      background: rgb(197 197 197);
-  }

@@ -1,4 +1,4 @@
 import {combineReducers} from 'redux'
-import todoReducer from './todo'
+import QuizzeReducer from './todo'
 
-export default combineReducers({todoReducer})
+export default combineReducers({QuizzeReducer})
