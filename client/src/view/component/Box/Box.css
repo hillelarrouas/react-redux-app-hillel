@@ -1,0 +1,20 @@
+.Box {
+    width: 100%;
+    max-width: 600px;
+}
+
+.titelQuestion {
+    height: 240px;
+    width: 100%;
+    background: #6645dd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(9vw, 40px);
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
