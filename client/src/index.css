@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
-  background: linear-gradient(270deg, #ee765249, #23a5d544, #23d5ab3b);
-  
+  background: linear-gradient(270deg, #23a5d544, #23d5ab3b);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  padding: 25px 0;
 }
 
 code {

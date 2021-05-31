@@ -17,11 +17,11 @@ function BoxAnswer() {
         const numberGrafButtom = Math.round(arrayQuestion.Answer[1].NumberOfClicks / (arrayQuestion.Answer[0].NumberOfClicks + arrayQuestion.Answer[1].NumberOfClicks) * 100)
 
 
-        const randomColor = '#' + Math.random().toString(16).substr(-6);
+        // const randomColor = '#' + Math.random().toString(16).substr(-6);
         return (
             <div className="BoxAnswer">
                 <div className='Box'>
-                    <div className="titelQuestion" style={{ background: randomColor }}>{arrayQuestion.Question}</div>
+                    <div className="titelQuestion">{arrayQuestion.Question}</div>
                     <AnswerGraph Answer={arrayQuestion.Answer[0]} numberGrf={numberGrafTop} />
                     <AnswerGraph Answer={arrayQuestion.Answer[1]} numberGrf={numberGrafButtom} />
                 </div>

@@ -27,22 +27,24 @@
 }
 
 
-.Graph> .numVotes > h1 {
+.Graph>.numVotes>h1 {
     font-size: 35px;
     font-weight: 500;
     margin: 0;
     padding: 0;
+    transition: all 0.3s;
 }
 
 
-.bordergraf{
-    height: 35px;
+.bordergraf {
+    margin: 5px 0 0;
+    height: 30px;
     border-radius: 6px 2px 2px 6px;
     box-shadow: 0 0 3px 0px cadetblue;
     overflow: hidden;
 }
 
-.Graph > .bordergraf > .colorgraf{
+.Graph>.bordergraf>.colorgraf {
     background-color: cadetblue;
     width: 0%;
     height: 100%;
@@ -51,23 +53,39 @@
 }
 
 
-.Graph > .textAnswer{
-    padding: 2px 0;
+.Graph>.textAnswer {
+    padding: 8px 0;
     font-weight: 600;
 }
 
 
-    
-.Graph> .numVotes > div {
+
+.Graph>.numVotes>div {
     font-size: 13px;
     color: gray;
     font-weight: 600;
 }
 
-.numVotes{
+.numVotes {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding-left: 3px;
 }
 
+
+@media only screen and (max-width:450px) {
+
+    .Graph>.numVotes>h1 {
+        font-size: 25px;
+        padding: 2px 0 0;
+    }
+
+    .cardAnswerGraph {
+        height: 105px;
+    }
+
+    .cardImgAnswer {
+        width: 150px;
+    }
+}

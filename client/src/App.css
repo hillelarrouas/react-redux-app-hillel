@@ -1,16 +1,16 @@
-.App{
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.getQuestion{
-  background: linear-gradient(270deg, #23a5d5c9, #757e7cab);
+.getQuestion {
+  background: linear-gradient(192deg, #23a5d59e, #0b564557);
   padding: 10px 15px;
   border-radius: 5px;
-  margin-bottom:10px;
-  border:1px solid rgba(0, 0, 255, 0.219);
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 255, 0.219);
   outline: none;
   font-size: 17px;
   color: white;
@@ -18,6 +18,13 @@
   transition: all 0.3s;
 }
 
-.getQuestion:hover{
-  box-shadow: 0 0 11px 2px rgb(0 0 0 / 20%);
+.getQuestion:hover {
+  box-shadow: 0 0 11px 1px rgb(0 0 0 / 20%);
+}
+
+
+@media only screen and (max-width:450px) {
+  .App {
+    align-items: flex-start;
+  }
 }

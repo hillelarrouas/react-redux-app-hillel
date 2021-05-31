@@ -6,12 +6,12 @@ import Question from '../Question/Question'
 
 
 function Box({ QuestionState}) {
-    const randomColor = '#' + Math.random().toString(16).substr(-6);
+    // const randomColor = '#' + Math.random().toString(16).substr(-6);
 
 
         return (
             <div className='Box'>
-                <div className="titelQuestion" style={{ background: randomColor }}>{QuestionState.Question}</div>
+                <div className="titelQuestion">{QuestionState.Question}</div>
                 <div style={{ marginTop: '13px', display: "flex", justifyContent: 'space-between' }}>
 
 
